@@ -1,0 +1,24 @@
+{
+  "name": "br_hw_16_cup_plans",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artofnext/br_hw_16_cup_plans.git"
+  },
+  "author": "artofnext",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/artofnext/br_hw_16_cup_plans/issues"
+  },
+  "homepage": "https://github.com/artofnext/br_hw_16_cup_plans#readme"
+}
