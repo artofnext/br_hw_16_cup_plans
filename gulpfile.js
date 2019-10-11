@@ -1,17 +1,24 @@
 let gulp = require('gulp');
 let sass = require('gulp-sass');
 
-
-gulp.task("compile", function() {
+function compile() {
     return gulp.src("./css/*.scss")
         .pipe(sass())
         .pipe(gulp.dest((file) => {
             return file.base;
         }));
-});
+};
 
-gulp.task("watch", () => {
-    return gulp.watch("./css/*.scss", gulp.series('compile'));
-})
+function watch() {
+    return gulp.watch('./css/*.scss', compile);
+};
 
-gulp.task("default", gulp.series('compile'));
+exports.default = function() {
+    return compile();
+};
+
+exports.compile = compile;
+exports.watch = watch;
+
+
+// gulp --tasks  to see registered tasks
